@@ -1,0 +1,185 @@
+    /* Skipting á svæðum inná síðunni fyrir scrollspy - navbarinn */
+
+body {
+    position: relative;
+}
+
+#mission {
+    padding-top: 0px;
+    color: #fff;
+    background-color: #2a9fd6;
+}
+
+#features {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    color: #fff;
+}
+
+#testimonials {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    color: #fff;
+}
+
+#phones {
+    padding-top: 50px;
+    color: #fff;
+    padding-bottom: 100px;
+    background-color: #009688;
+}
+
+#acccessories {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    color: #fff;
+}
+
+#contact {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    color: #fff;
+    background-color: #ff9800;
+}
+
+
+/* Kóði til þess að fá navbarinn til þess að hleypa efni fyrir ofan sig  background-color: #ff9800;*/
+
+.affix {
+    top: 0;
+    width: 100%;
+    z-index: 9999 !important;
+}
+
+.navbar {
+    margin-bottom: 0px;
+}
+
+.affix~.container-fluid {
+    position: relative;
+    top: 50px;
+}
+
+.tabText {
+    margin: 5px;
+    font-size: 18px;
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.blockText {
+    margin: 50px;
+}
+
+
+/* Carousel fade trix á testimonials blockquotes partinum */
+
+.carousel-fade .carousel-inner .item {
+    -webkit-transition-property: opacity;
+    transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .item, .carousel-fade .carousel-inner .active.left, .carousel-fade .carousel-inner .active.right {
+    opacity: 0;
+}
+
+.carousel-fade .carousel-inner .active, .carousel-fade .carousel-inner .next.left, .carousel-fade .carousel-inner .prev.right {
+    opacity: 1;
+}
+
+.carousel-fade .carousel-inner .next, .carousel-fade .carousel-inner .prev, .carousel-fade .carousel-inner .active.left, .carousel-fade .carousel-inner .active.right {
+    left: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.carousel-fade .carousel-control {
+    z-index: 2;
+}
+
+html, body, .carousel, .carousel-inner, .carousel-inner .item {
+    height: 100%;
+}
+
+.item:nth-child(1) {
+    background: #74C390;
+}
+
+.item:nth-child(2) {
+    background: #51BCE8;
+}
+
+.item:nth-child(3) {
+    background: #E46653;
+}
+
+
+/* Video background á section 1*/
+
+#Container {
+    width: 100%;
+    height: 360px;
+    position: relative;
+}
+
+#Video, #Message {
+    width: 100%;
+    height: 360px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#Message {
+    text-shadow: 2px 2px 2px #000000;
+    color: white;
+}
+
+#Message h1 {
+    font-size: 3em;
+    color: #ffffff;
+    text-align: center;
+    padding: 0.4em;
+}
+
+
+/* Video background pælingar búnar */
+
+
+/* Parallax pælingar eru hér */
+
+body, html {
+    height: 100%;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url('johndoegold1.jpg');
+    /* Full height */
+    height: 1331px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+.caption span.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+    /*parallax pælingar enda hér */
